@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { query as q } from 'faunadb'
-import { getSession } from "next-auth/react";
+import { getSession } from "next-auth/client";
 import { fauna } from "../../services/fauna";
 import { stripe } from "../../services/stripe";
 
@@ -13,8 +13,7 @@ type User = {
   }
 }
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+export default async function subscribe (req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'POST') {
     const session = await getSession({ req })
 
