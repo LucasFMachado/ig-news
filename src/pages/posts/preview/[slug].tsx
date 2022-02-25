@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { GetStaticPaths, GetStaticProps } from "next"
-import Head from 'next/Head'
+import Head from 'next/head'
 import { useSession } from "next-auth/client"
 import Link from 'next/link'
 import { RichText } from "prismic-dom"
