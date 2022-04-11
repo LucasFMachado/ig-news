@@ -1,6 +1,6 @@
 # IgNews
   
-> In this project, a blog was developed using TypeScript, where the user has the possibility of subscribe in it so that they have access to the posts content in a complete way (otherwise, the user can only check the preview of the posts).
+> In this project, a blog was developed using NextJS and TypeScript, where the user has the possibility of subscribe in it (using Stripe) so that they have access to the posts content in a complete way (otherwise, the user can only check the preview of the posts).
 
 <br />
 
